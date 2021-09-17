@@ -112,7 +112,7 @@ export default class App extends Component {
         videoTrack && videoTrack.stop();
         rtcClient.leave();
         this.setState({ 
-            channel: '6666',
+            channel: '',
             isLogin: false,
             videoDevices: null,
             audioDevices: null,
