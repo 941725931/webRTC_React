@@ -10,7 +10,7 @@ export default class App extends Component {
     }
 
     state = {
-        channel: '6666',
+        channel: '',
         isLogin: false,
         rtcClient: null,
         videoDevices: null,
