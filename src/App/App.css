@@ -1,0 +1,106 @@
+#container {
+    margin: 0 auto 0 auto;
+    max-width: 60em;
+    padding: 1em 1.5em 1.3em 1.5em;
+}
+
+.title {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 0.8em 0;
+    padding: 0 0 0.2em 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+.title a, .instructions a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #1D6EEE;
+}
+
+.title a:hover, .instructions a:hover {
+    border-bottom: 2px solid #1D6EEE;
+}
+
+.instructions {
+    margin: 0.8em 0;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-weight: 300;
+}
+
+.instructions .userId {
+    color: #1D6EEE;
+}
+
+#playContainer {
+    display: flex;
+    align-items: center;
+}
+
+#local, .distal {
+    width: 400px;
+    height: 220px;
+    margin-right: 20px;
+    background-color: #222222;
+}
+
+.btn {
+    width: 70px;
+    margin-top: 10px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background-color: #409EFF;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.channelInput {
+    width: 240px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #409EFF;
+    outline: none;
+    text-indent: .5rem;
+    margin-right: 10px;
+}
+
+.joinBtn {
+    width: 80px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background-color: #409EFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.joinBtn:active {
+    transform: translateY(2px);
+}
+
+.joinBtn[disabled] {
+    background-color: #E1E1E2;
+    cursor: not-allowed;
+}
+
+#viewSource {
+    display: block;
+    margin: 1.3em 0 0 0;
+    border-top: 1px solid #999;
+    padding: 1em 0 0 0;
+    color: #1D6EEE;
+    font-weight: 300;
+    text-decoration: none;
+}
