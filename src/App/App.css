@@ -14,13 +14,13 @@
     white-space: nowrap;
 }
 
-.title a, .instructions a {
+a {
     text-decoration: none;
     margin-right: 10px;
     color: #1D6EEE;
 }
 
-.title a:hover, .instructions a:hover {
+a:hover {
     border-bottom: 2px solid #1D6EEE;
 }
 
@@ -96,7 +96,6 @@
 }
 
 #viewSource {
-    display: block;
     margin: 1.3em 0 0 0;
     border-top: 1px solid #999;
     padding: 1em 0 0 0;
