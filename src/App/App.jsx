@@ -4,11 +4,6 @@ import Config from '../anyrtc_config';
 import './App.css';
 
 export default class App extends Component {
-    constructor(){
-        super();
-        this.channelInput = React.createRef();
-    }
-
     state = {
         channel: '',
         isLogin: false,
@@ -101,9 +96,9 @@ export default class App extends Component {
         });
     }
 
-    channelInputChange = () => {
+    channelInputChange = (e) => {
         this.setState({
-            channel: this.channelInput.current.value
+            channel: e.target.value
         });
     }
 
@@ -138,7 +133,7 @@ export default class App extends Component {
                     }) }
                 </div>
                 { isLogin && <button onClick={ this.hangUp } className='btn'>Hang Up</button> }
-                { !isLogin && <input type="text" ref={ this.channelInput } onChange={ this.channelInputChange } className='channelInput' placeholder='Please enter the channel'/> }
+                { !isLogin && <input type="text" value={ channel } ref={ this.channelInput } onChange={ this.channelInputChange } className='channelInput' placeholder='Please enter the channel'/> }
                 { !isLogin && <button onClick={ this.join } disabled={ !channel } className='joinBtn'>join</button> }
                 <div className='instructions'>View the console to see logging. The MediaStream object localStream, and the RTCPeerConnection objects pc1 and pc2 are in global scope, so you can inspect them in the console as well.</div>
                 <div className='instructions'>For more information about anyRTC WebRTC, see Getting Started With <a href="https://docs.anyrtc.io/cn/Video/api-ref/rtc_web/overview" target='_blank'>anyRTC</a></div>
